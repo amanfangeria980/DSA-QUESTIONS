@@ -22,3 +22,8 @@ vector<int> getNextGreaterElement (vector<int> &A) {
 //checking from left to right
 // pop ans (at the same time)
 // then push
+
+//Different variants can be made from this ques like,
+// 1.NextSmallerElementToTheRight
+// 2.NextGreaterElementToTheLeft
+// 3.NextSmallerElementToTheLeft
