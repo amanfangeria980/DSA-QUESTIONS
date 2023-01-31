@@ -23,6 +23,8 @@ vector<int> getNextGreaterElement (vector<int> &A) {
 // pop ans (at the same time)
 // then push
 
+//playing with inde
+
 //Different variants can be made from this ques like,
 // 1.NextSmallerElementToTheRight
 // 2.NextGreaterElementToTheLeft
