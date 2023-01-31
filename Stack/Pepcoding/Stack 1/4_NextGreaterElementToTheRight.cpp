@@ -1,3 +1,6 @@
+#include<bits/stdc++.h>
+using namespace std;
+
 vector<int> getNextGreaterElement (vector<int> &A) {
 	int n=A.size();
 	vector<int> ans(n);
@@ -17,6 +20,15 @@ vector<int> getNextGreaterElement (vector<int> &A) {
 		st.push(A[i]);
 	}
 	return ans;
+}
+
+int main(){
+	vector<int> v={1,2,3,4,2,9,8,5,6};
+	vector<int> ans=getNextGreaterElement(v);
+	for(auto it : ans){
+		cout<<it<<" ";
+	}
+	return 0;
 }
 //checking from right to left
 // pop ans push
