@@ -7,7 +7,7 @@ using namespace std;
 class Solution
 {
     public:
-    
+    //left boundary
     long long*lb(long long arr[],int n){
     long long *ans = new long long[n];
     stack<int> st;
@@ -23,7 +23,7 @@ class Solution
     }
     return ans;
 }
-
+    //right boundary
     long long *rb(long long arr[],int n){
     long long *ans = new long long[n];
     stack<int> st;
