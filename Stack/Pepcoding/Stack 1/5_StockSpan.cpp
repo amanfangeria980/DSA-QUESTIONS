@@ -5,7 +5,7 @@ using namespace std;
 
 // } Driver Code Ends
 
-
+//using next greater element from left
 class Solution
 {
     public:
