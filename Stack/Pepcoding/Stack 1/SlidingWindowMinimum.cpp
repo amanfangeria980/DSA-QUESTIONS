@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int *nger(int arr[], int n)
+int *nser(int arr[], int n)
 {
     int *ans = new int[n];
     stack<int> st;
@@ -9,7 +9,7 @@ int *nger(int arr[], int n)
     st.push(n - 1);
     for (int i = n - 2; i >= 0; i--)
     {
-        while (!st.empty() && arr[i] > arr[st.top()])
+        while (!st.empty() && arr[i] < arr[st.top()])
         {
             st.pop();
         }
@@ -30,7 +30,7 @@ int main()
     {
         cin >> arr[i];
     }
-    int *nge = nger(arr, n);
+    int *nge = nser(arr, n);
     int k;
     cin >> k;
     int j = 0;
