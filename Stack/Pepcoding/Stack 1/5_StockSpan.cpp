@@ -29,7 +29,27 @@ class Solution
 };
 
 
-
+//Alternate Solution:(Aditya Verma)
+    // vector <int> calculateSpan(int arr[], int n)
+    // {
+    //     stack<int> st;
+    //     st.push(0);
+    //     vector<int> ngl(n);
+    //     ngl[0]=-1;
+    //     for(int i=1;i<n;i++){
+    //         while(!st.empty() && arr[i]>=arr[st.top()]){
+    //             st.pop();
+    //         }
+    //         if(st.empty()) ngl[i]=-1;  //khud ka index+1
+    //         else ngl[i]=st.top(); //khud ka index - top wale ka index 
+    //         st.push(i);
+    //     }
+    //     vector<int> res(n);
+    //     for(int i=0;i<ngl.size();i++){
+    //         res[i]=i-ngl[i];
+    //     }
+    //     return res;
+    // }
 //{ Driver Code Starts.
 
 int main()
