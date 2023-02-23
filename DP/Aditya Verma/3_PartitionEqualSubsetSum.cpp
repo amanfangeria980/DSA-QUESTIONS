@@ -1,3 +1,30 @@
+//Recursion+Nenoization
+
+// class Solution {
+// public:
+//     bool subsetSum(vector<vector<int>> &dp,vector<int> &arr,int n,int w){
+//         if(w==0)return 1;
+//         if(n==0)return 0;
+//         if(dp[n][w]!=-1)return dp[n][w];
+//         if(arr[n-1]<=w){
+//             return dp[n][w]=subsetSum(dp,arr,n-1,w-arr[n-1]) || subsetSum(dp,arr,n-1,w);
+//         }
+//         else{
+//             return dp[n][w]=subsetSum(dp,arr,n-1,w);
+//         }
+//     }
+
+//     bool canPartition(vector<int>& nums) {
+//         int sum=0;
+//         for(int i=0;i<nums.size();i++){
+//             sum+=nums[i];
+//         }
+//         vector<vector<int>> dp(nums.size()+1,vector<int>(sum+1,-1));
+//         if(sum%2!=0)return false;
+//         else return subsetSum(dp,nums,nums.size(),sum/2);
+//     }
+// };
+
 //TOP DOWN MATRIX APPROACH
 
 //{ Driver Code Starts
